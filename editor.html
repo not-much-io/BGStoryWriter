@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editor</title>
+    <style>
+    @font-face {
+        font-family: sherwood;
+        src: local("sherwood"), local("sherwood"),
+        url(SHERWOOD.TTF);
+     }
+
+    textarea:focus, input:focus{
+        outline: none;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 98%;
+        background-color: #D2B48C;
+        background-image: url("background.jpg");
+        display: block;
+        margin: 0 auto;
+        overflow:hidden;
+        padding: 1%;
+    }
+
+   .half-page {
+        height: 48%;
+        padding: 1%;
+   }
+
+   .center {
+        display: block;
+        margin: 0 auto;
+   }
+
+   .writing-pad {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: #FAEBD7;
+        font-family: "sherwood", sherwood, sherwood;
+   }
+
+   .shadow4 {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   }
+
+   .oldy-text {
+        font-size: 1.5em;
+        font-color: white;
+   }
+   </style>
+
+</head>
+<body>
+
+<div class="half-page center">
+    <img
+            class="center shadow4"
+            src="screenshot0.png"
+            height="100%">
+</div>
+<div class="half-page center">
+    <div style="
+        border: 2em solid #FAEBD7;
+        width: 90%;
+        height: 70%;"
+        class="shadow4 center">
+        <textarea class="writing-pad oldy-text">
+        </textarea>
+    </div>
+</div>
+</body>
+</html>
