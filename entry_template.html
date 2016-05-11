@@ -21,7 +21,7 @@
     body {
         height: 98%;
         background-color: #D2B48C;
-        background-image: url("background.jpg");
+        background-image: url("background2.jpg");
         display: block;
         margin: 0 auto;
         overflow:hidden;
@@ -47,7 +47,7 @@
    }
 
    .shadow4 {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
    }
 
    .oldy-text {
@@ -62,7 +62,7 @@
 <div class="half-page center">
     <img
             class="center shadow4"
-            src="screenshot0.png"
+            src="../screens/{{screen}}"
             height="100%">
 </div>
 <div class="half-page center">
@@ -71,8 +71,14 @@
         width: 90%;
         height: 70%;"
         class="shadow4 center">
-        <textarea class="writing-pad oldy-text">
+        <textarea name="text"
+                  class="writing-pad oldy-text">
         </textarea>
+        <form action="127.0.0.1:8002"
+              method="post"
+              name="text">
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </div>
 </body>
